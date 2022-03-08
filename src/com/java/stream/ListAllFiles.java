@@ -1,9 +1,11 @@
 package com.java.stream;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FilenameFilter;
 
 public class ListAllFiles {
-	public static void listFiles(String path) {
+	public static void listFil(String path) {
 		File f=new File(path);
 		File[] folder=f.listFiles();
 		for (File files : folder) {
@@ -14,11 +16,11 @@ public class ListAllFiles {
 				System.out.println("Absolute Path is :"+files.getAbsolutePath());
 				System.out.println("---------------------------------------------");	
 			}else {
-				listFiles(files.getPath());
+				listFil(files.getPath());
 			}
 		}
 	}
 	public static void main(String[] args) {
-		listFiles("D:\\FilesExample");
+		listFil("D:\\FilesExample");
 	}
 }
