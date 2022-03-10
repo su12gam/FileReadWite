@@ -1,8 +1,6 @@
 package com.java.stream;
 
-import java.io.BufferedReader;
 import java.io.File;
-import java.io.FilenameFilter;
 
 public class ListAllFiles {
 	public static void listFil(String path) {
